@@ -1,7 +1,7 @@
 AVR UART Hello World in assembly
 ================================
 
-**This example outputs string "Hello World" to UART. The target chip is Atmega329P, used in Arduino Uno/Nano dev boards and their knockoffs.**
+**This example outputs string "Hello World" to UART. The target chip is Atmega328P, used in Arduino Uno/Nano dev boards and their knockoffs.**
 
 If you have **[Zig](http://ziglang.org)** installed, you can compile the program using
 
