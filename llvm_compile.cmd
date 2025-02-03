@@ -1,0 +1,6 @@
+@echo off
+echo Compiling...
+clang --target=avr -mmcu=atmega328p -c uart_hello.S -o uart_hello.o
+echo Linking...
+clang --target=avr -mmcu=atmega328p -nostdlib -fuse-ld=lld -Wl,-T,linker.ld -Wl,-s .\uart_hello.o -o .\uart_hello.elf
+echo Done!

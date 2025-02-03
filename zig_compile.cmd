@@ -1,0 +1,6 @@
+@echo off
+echo Compiling...
+zig cc -target avr-freestanding -mcpu=avr5 -mmcu=atmega328p -c uart_hello.S -o uart_hello.o
+echo Linking...
+zig cc -target avr-freestanding -mcpu=avr5 -mmcu=atmega328p -nostdlib -s -T linker.ld .\uart_hello.o -o .\uart_hello.elf
+echo Done!
