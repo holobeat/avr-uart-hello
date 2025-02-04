@@ -24,5 +24,5 @@ To test the binary in emulator, you can use **[Qemu](https://www.qemu.org/downlo
 
 *If you don't have zig installed, you can still compile the program using **[llvm](https://releases.llvm.org/download.html)**:*
 
-`clang --target=avr -mmcu=atmega328p -c uart_hello.S -o uart_hello.o`
-`clang --target=avr -mmcu=atmega328p -nostdlib -fuse-ld=lld -Wl,-T,linker.ld -Wl,-s .\uart_hello.o -o .\uart_hello.elf`
+    clang --target=avr -mmcu=atmega328p -c uart_hello.S -o uart_hello.o
+    clang --target=avr -mmcu=atmega328p -nostdlib -fuse-ld=lld -Wl,-T,linker.ld -Wl,-s .\uart_hello. -o .\uart_hello.elf
